@@ -1,0 +1,12 @@
+<h2>
+    FORMULARIO LOGIN
+</h2>
+<div>
+    <form [formGroup]="formularioLogin" (submit)="enviar()">
+        <input placeholder="Email" formControlName="email" type="email" />
+        <input placeholder="Contraseña" formControlName="password" type="password" />
+        <button type="submit" [disabled]="formularioLogin.invalid">
+            Acceder
+        </button>
+    </form>
+</div>
